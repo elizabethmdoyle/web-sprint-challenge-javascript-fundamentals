@@ -1,4 +1,4 @@
-# Sprint Challenge - JavaScript Fundamentals
+ # Sprint Challenge - JavaScript Fundamentals
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -28,7 +28,10 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Explain the difference between a callback and a higher order function.
 
+
 3. Explain what a closure is.
+
+ A closure is in its simplest form, a function inside of another function. What it creates, is a chain of scope, where the innermost function within the chain, will look outside of itself, to find references for variables called inside of its scope, until it reaches the outermost portion, where global scope resides. 
 
 4. Describe the four principles of the 'this' keyword.
 
