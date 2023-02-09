@@ -16,7 +16,7 @@ function myFunction() {
 //myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+/* The nestedFunction is a closure. It is the function inside of the function. Inside of the nestedFunction where the console.log is invoked, is considered block scope relative to the nestedFunction. Where internal is declared inside of myFunction, that is function scope in reference to the nested function, whereas the external variable is outside the myFunction, and for the nestedFunction, is accessable through global scope, as elements outside of the referenced function within the closure, can pull elements into the function, however elements cannot be pulled outside of the function to be used in the reverse order. */
 
 
 
@@ -30,12 +30,16 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
-  }
- 
-
+function summation(num) {
+    // let count = 0;
+    // for(let i = 0; i <= num; i++) {
+    //    num[i]++
+    //    count.push(num)
+    }
+    //  return count
+      
+    // }
+  
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
 
@@ -60,10 +64,17 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(zooAnimals){
+      let displayNames = [];
+
+      () => {     zooAnimals.Animals.forEach.push(displayNames.name, displayNames.scientific_name)
+
+
+      }
+    return displayNames
   }
   
+    // console.log(animalNames(zooAnimals))
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -116,8 +127,8 @@ const zooAnimals = [
     💡 NOTE: The tests for 'consume' will pass if it is created correctly and also after you correctly complete the functions 'add' and 'greeting' below in Step 2.
   */
 
-  function consume(/*Your Code Here */){
-    /*Your Code Here */
+  function consume(a, b, cb){
+    return cb(a, b);
   }
  
   
@@ -128,8 +139,8 @@ const zooAnimals = [
  2. Return the sum of those numbers
  */
 
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(num1, num2){
+    return num1 + num2
   }
 
 
@@ -138,8 +149,8 @@ function add(/*Your Code Here */){
 2. Return the product of those numbers
 */
 
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(num1, num2){
+   return num1 * num2
   }
 
 
@@ -149,8 +160,8 @@ function multiply(/*Your Code Here */){
 💡 NOTE: The string returned must match the format above or the test will not pass!
 */
 
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(firstName, lastName){
+   return `Hello ${firstName} ${lastName}, nice to meet you!`
   }
   
   
