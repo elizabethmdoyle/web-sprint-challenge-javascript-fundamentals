@@ -30,15 +30,17 @@ function myFunction() {
 💡 NOTE: you may use a for loop for this function if you wish 
 */
 
-function summation(num) {
-    // let count = 0;
-    // for(let i = 0; i <= num; i++) {
-    //    num[i]++
-    //    count.push(num)
-    }
-    //  return count
+function summation(number) {
+      // let count = 0;
+    
+      // function counter() {
+      //   return count++;
+      // }
+
       
-    // }
+    }
+
+console.log(summation(4))
   
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -65,13 +67,7 @@ const zooAnimals = [
   */
 
   function animalNames(zooAnimals){
-      let displayNames = [];
-
-      () => {     zooAnimals.Animals.forEach.push(displayNames.name, displayNames.scientific_name)
-
-
-      }
-    return displayNames
+      
   }
   
     // console.log(animalNames(zooAnimals))
@@ -87,7 +83,6 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(zooAnimals){
-    const animalArray = [];
 
   }
   
@@ -100,8 +95,9 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(zooAnimals){
+    const popAnimals = zooAnimals.filter()
+     
   }
   
 
@@ -114,8 +110,8 @@ const zooAnimals = [
   💡 NOTE: Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count. Check MDN/W3Schools for syntax!
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(zooAnimals){
+    
   }
   
   
@@ -220,7 +216,11 @@ CuboidMaker.prototype.surfaceArea = function() {
   Add properties and values of length: 4, width: 5, and height: 5 to cuboid. */
 
 
-const cuboid = new CuboidMaker(4, 5, 5)
+const cuboid = new CuboidMaker({
+  length: 4,
+  width: 5,
+  height: 5
+})
 
 // 🐴🐴🐴 Test your volume and surfaceArea methods by uncommenting the logs below: 🐴🐴🐴
 // ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️ ⬇️
@@ -247,7 +247,11 @@ surfaceArea() {
 
 }
 
-const cuboidTwo = new CuboidMakerTwo(4,5,5)
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4,
+  width: 5,
+  height: 5
+})
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
