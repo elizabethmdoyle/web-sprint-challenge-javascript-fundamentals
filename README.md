@@ -25,8 +25,15 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+.map - essentially is a copy of an array with a for loop,as a higher order function. 
+.filter - used to loop over an array in order to return specific results.
+.reduce
+
 
 2. Explain the difference between a callback and a higher order function.
+A higher order function, is a function that accepts another function as one of its parameters/arguments. 
+
+A callback is reference to another function, that will later be passed in as the argument to another function.
 
 
 3. Explain what a closure is.
@@ -34,8 +41,13 @@ Edit this document to include your answers after each question. Make sure to lea
  A closure is in its simplest form, a function inside of another function. What it creates, is a chain of scope, where the innermost function within the chain, will look outside of itself, to find references for variables called inside of its scope, until it reaches the outermost portion, where global scope resides. 
 
 4. Describe the four principles of the 'this' keyword.
+implicit binding - where whatever is to the left of the dot in the function upon invocation is what "this" is.
+explicit binding - used when .call and .apply is called, also unique to constrictor fucntions, it allows for the original parameters to be overriden
+new binding- unique to constructor functions, used to create a new instance of an object created within the constructor function. 
+global binding - when this is accessible in global scope
 
 5. Why do we need super() in an extended class?
+We need super in order to replace the need for Object.create() in es6 syntax and above.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
