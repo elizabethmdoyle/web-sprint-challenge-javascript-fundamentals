@@ -31,13 +31,13 @@ function myFunction() {
 */
 
 function summation(number) {
-      // let count = 0;
-    
-      // function counter() {
-      //   return count++;
-      // }
+      let count = 0;
+      let total = 0;
+      for(let i = 0; i <= number; i++) {
+        ((total += count++))
+      }
 
-      
+      return total
     }
 
 console.log(summation(4))
@@ -67,10 +67,15 @@ const zooAnimals = [
   */
 
   function animalNames(zooAnimals){
-      
+      let displayNames = [];
+       zooAnimals.forEach(item => {displayNames.push( `name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+      });
+
+       return displayNames
+
   }
   
-    // console.log(animalNames(zooAnimals))
+    console.log(animalNames(zooAnimals))
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -83,9 +88,15 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(zooAnimals){
+      let lowerCaseArray = [];
 
+    zooAnimals.map(item => { 
+      lowerCaseArray.push(item.animal_name.toLowerCase())
+    })
+    return lowerCaseArray
+      
   }
-  
+   console.log(lowerCaseNames(zooAnimals))
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
@@ -96,10 +107,12 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(zooAnimals){
-    const popAnimals = zooAnimals.filter()
+    const popAnimals = zooAnimals.filter(item => item.population < 5)
+    return popAnimals
      
   }
   
+  console.log(lowPopulationAnimals(zooAnimals))
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
