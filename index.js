@@ -124,9 +124,12 @@ const zooAnimals = [
   */
 
   function USApop(zooAnimals){
-    
+    let totalPop = zooAnimals.reduce((total, next) => {
+      return total + next.population;
+    }, 0);
+    return totalPop
   }
-  
+  console.log(USApop(zooAnimals))
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
